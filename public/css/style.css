@@ -1,0 +1,257 @@
+/* ----------------- Général ------------------- */
+
+p {
+	color: white;
+	font-family: 'inkfree';
+	font-size: 1.5em;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+/* -------------- Fond d'écran vidéo --------------------- */
+
+#background_container {
+	position: fixed; top: 0; left: 0;
+	height: 100%;
+	overflow: hidden; 
+	z-index: -1;
+	width: 100%;
+}
+
+#background_container video {
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#img_container {
+	display: none;
+}
+
+/* ---------------------- Fonts -------------------------------------*/
+
+@font-face {
+	font-family: 'inkfree';
+	src: url('fonts/inkfree.ttf'); 
+}
+
+@font-face {
+	font-family: "tomatoes";
+	src: url('fonts/tomatoes.ttf');
+}
+
+@font-face {
+	font-family: "telegrafico";
+	src: url('fonts/telegrafico.TTF');
+}
+
+@font-face {
+	font-family: "expressway";
+	src: url('fonts/expressway.ttf');
+}
+
+@font-face {
+	font-family: "roboto";
+	src: url('fonts/roboto.ttf');
+}
+
+@font-face {
+	font-family: "bkant";
+	src: url('fonts/bkant.ttf');
+}
+
+
+
+/* ---------------- Header -------------------- */
+
+#clk {
+	font-family: "tomatoes";
+	font-size: 1.7em;
+	font-weight: bold;
+	color: white;
+}
+
+#np {
+	font-family: "telegrafico";
+	font-size: 1.3em;
+	font-weight: bold;
+	color: white;
+}
+
+#ac {
+	font-size: 1.5em;
+	margin-top: -20px;
+}
+
+
+/* ----------- Menu positionnement du Menu ------------------- */
+
+.marge {
+	color: white;
+	font-family: 'inkfree';
+	font-size: 2em;
+}
+
+#active {
+	text-decoration: underline;
+}
+
+.socials {
+	margin: 3px; 
+}
+
+li { 
+	padding: 8px;
+}
+
+/* ------------------- Formulaire -------------------------------*/ 
+
+#forms {
+	font-family: "bkant";
+	color: white;
+	font-size: 1em;
+}
+
+#mc_embed_signup{
+	background:rgba(178, 144, 114, 0.9); 
+	clear:left; 
+	width:500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#spams {
+	font-family: "bkant";
+	color: #405620;
+	font-size: 0.8em;
+}
+
+/* ----------------- images ------------------------- */
+
+
+#cliquez {
+	margin-top: 75px;
+	text-align: center;
+}
+
+#colorc {
+	background-color :rgba(178, 144, 114, 0.9);
+	padding: 7px;
+}
+
+#clktab {
+	width: auto;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.homepics img {
+	border: solid 3px white;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }
+
+.gallery-img {
+	padding-right: 8px !important;
+	padding-left: 8px !important;
+}
+/* ----------------------- Atelier ----------------------------- */
+
+#description {
+	color: white;
+	font-size: 1.4em;
+	text-align: justify;
+}
+
+#descriptionleft {
+	background-color: rgba(178, 144, 114, 0.9);
+	padding: 20px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#descriptionleft p {
+	font-family: "bkant";
+	font-size: 1.2em;
+}
+
+/* ---------------------------- FAQ --------------------------------- */
+
+#faq_background {
+	font-family: "bkant";
+	background-color: rgba(178, 144, 114, 0.9);
+	font-size: 1.3em;
+	color: white;
+	margin: auto;
+	text-align: none;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.cercle {
+	font-size: 0.6em;
+	margin-right: 10px;
+}
+
+.question {
+	margin-bottom: -10px;
+}
+
+/* ------------------- Contact -------------------------------*/ 
+
+
+
+#formbg {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+}
+
+#formtitle {
+	color: black;
+	font-size: 1.5em;
+}
+
+#contactright {
+	
+	border: solid 2px white;
+}
+
+#contactright p {
+	color: white;
+	font-size: 1.7em;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#portait {
+	padding: 10px;
+}
+
+.card-text {
+	color : black;
+	font-weight: bold;
+}
+
+.card-body img {
+	display: initial;
+}
