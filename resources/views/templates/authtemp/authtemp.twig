@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>CLK - Nature & Palette</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="public/css/mailchimp.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="public/css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  
+</head>
+<body>
+  <div id="background_container">
+    <video autoplay loop muted id="bgvid">
+      <source src="ressources/videos/ForestBG2.mp4" type="video/mp4">
+      <source src="ressources/videos/ForestBG2.webm" type="video/webm">
+    </video>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-8 offset-md-2 text-center"><h1> <span id="clk">CLK</span> <span id="np">NATURE ET PALETTE</span> </h1></div>
+      <div class="col-md-2 text-right">
+      {% if auth.check %} 
+      <span class="linkauth"> <a class="styleauth" href={{ path_for('auth.signout') }}>Deconnexion</a> </span>
+      {% else %}
+      <span class="linkauth"> <a class="styleauth" href={{ path_for('auth.signup') }}>Inscription</a> </span>
+      <span class="linkauth"> <a class="styleauth" href={{ path_for('auth.signin') }}>Connexion</a> </span>
+      {% endif %}
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-6">
+      </div>
+      <div class="col-lg-6">
+        <p id="ac"> Création de Tableaux </p>
+        </div>
+      </div>
+  
+  <div id="img_container">
+    <img src="ressources/img/background/tel2.jpg" alt="photo du ciel">
+  </div>
+  <div class="row">
+    <div class="col-lg-12 mt-4 text-center">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="marge nav-link" {% block home %}{% endblock %} href= {{path_for("home") }}>Accueil</a></li>
+        <li class="nav-item"><a class="marge nav-link" {% block gallery %}{% endblock %}href="gallery">Galerie</a></li>
+        <li class="nav-item"><a class="marge nav-link" {% block atelier %}{% endblock %}href="atelier">Atelier</a></li>
+        <li class="nav-item"><a class="marge nav-link" {% block faq %}{% endblock %}href="faq">F.A.Q</a></li>
+        <li class="nav-item"><a class="marge nav-link" {% block contact %}{% endblock %}href="contact" >Contact</a></li>
+        <a class="socials" href="https://www.facebook.com/clknatureetpalette/"> <img src="ressources/img/fb.png"
+              alt="photo d'un logo facebook" /> </a> 
+        <a class="socials" href="https://www.instagram.com/clknatureetpalette/"> <img src="ressources/img/insta.png"
+                alt="photo d'un logo instagram" /></a>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'templates/partials/flash.twig' %}
+
+  {% block content %}{% endblock %}
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>

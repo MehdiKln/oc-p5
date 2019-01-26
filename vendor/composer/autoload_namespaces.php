@@ -8,5 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
-    'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
 );

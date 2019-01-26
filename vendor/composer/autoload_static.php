@@ -4,13 +4,14 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit617671c7f60600950c87d03d0a16c718
+class ComposerStaticInit476d002392e0ecfdbbc5fa8c8dfcfac4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -25,7 +26,13 @@ class ComposerStaticInit617671c7f60600950c87d03d0a16c718
             'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Translation\\' => 30,
             'Slim\\Views\\' => 11,
+            'Slim\\Flash\\' => 11,
+            'Slim\\Csrf\\' => 10,
             'Slim\\' => 5,
+        ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
         ),
         'P' => 
         array (
@@ -47,7 +54,6 @@ class ComposerStaticInit617671c7f60600950c87d03d0a16c718
         ),
         'D' => 
         array (
-            'Dotenv\\' => 7,
             'Doctrine\\Common\\Inflector\\' => 26,
         ),
         'A' => 
@@ -81,9 +87,21 @@ class ComposerStaticInit617671c7f60600950c87d03d0a16c718
         array (
             0 => __DIR__ . '/..' . '/slim/twig-view/src',
         ),
+        'Slim\\Flash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/flash/src',
+        ),
+        'Slim\\Csrf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/csrf/src',
+        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -121,10 +139,6 @@ class ComposerStaticInit617671c7f60600950c87d03d0a16c718
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
-        'Dotenv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
-        ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
@@ -153,20 +167,16 @@ class ComposerStaticInit617671c7f60600950c87d03d0a16c718
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
-            'PhpOption\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
-            ),
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit617671c7f60600950c87d03d0a16c718::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit617671c7f60600950c87d03d0a16c718::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit617671c7f60600950c87d03d0a16c718::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit617671c7f60600950c87d03d0a16c718::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit476d002392e0ecfdbbc5fa8c8dfcfac4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit476d002392e0ecfdbbc5fa8c8dfcfac4::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit476d002392e0ecfdbbc5fa8c8dfcfac4::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit476d002392e0ecfdbbc5fa8c8dfcfac4::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

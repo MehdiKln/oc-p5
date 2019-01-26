@@ -1,0 +1,38 @@
+{% extends "templates/app.twig" %}
+
+{% block contact %} id="active" {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class ="row mt-5" id="contact_background">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-6">
+            <div id="formbg">
+                <form method="post" action="{{ path_for('submit-form') }}">
+                    <p> <label for="title" id="formtitle"> Formulaire de contact : </label> </br> </br>
+                        <input type="text" name="title" id="title" placeholder="Titre de votre message" size="30" maxlength="25" required/> </br></br>
+                        <input type="text" name="nom" id="nom" placeholder="Nom Prénom" size="30" maxlength="20" required/> </br></br>
+                        <input type="mail" name="email" id="mail" placeholder="Votre adresse e-mail" size="30" maxlength="30" required/> </br></br>
+                        <textarea id="textarea" name="textarea" id="textarea" placeholder="Votre message" rows="5" cols="70" required></textarea> </br></br>
+                        <input type="submit" name="submit" value="Envoyer">
+                    </p>
+                    {{ csrf.field | raw }}
+                </form> 
+            </div>
+        </div>
+        <div class="col-lg-4" align="center">
+            <div class="card" style="width: 18rem;">
+                <img id="portait" src="ressources/img/portrait.jpg" alt="photo d'un tableau en bois avec un heron"/>
+                <div class="card-body">
+                    <p class="card-text"> Cédric Klein </p>
+                <a class="socials" href="https://www.instagram.com/clknatureetpalette/"> <img src="ressources/img/insta.png" alt="photo d'un logo instagram"/></a> 
+                <a class="socials" href="https://www.facebook.com/clknatureetpalette/"> <img src="ressources/img/fb.png" alt="photo d'un logo facebook"/> </a>
+                </div>
+            </div>      
+        </div>
+    </div>
+</div>
+
+{% endblock %}

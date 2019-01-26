@@ -11,7 +11,11 @@ a:link {
 }
 
 a:hover {
-	font-weight: bold;
+	font-weight: bold !important;
+}
+
+.linkauth:hover {
+	font-weight: bold !important;
 }
 
 /* -------------- Fond d'écran vidéo --------------------- */
@@ -94,6 +98,19 @@ a:hover {
 	margin-top: -20px;
 }
 
+.linkauth {
+	background:rgba(178, 144, 114, 0.9); 
+	padding: 5px;
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.styleauth {
+	font-family: 'telegrafico';
+	font-size: 1.3em;
+	color: white;
+}
 
 /* ----------- Menu positionnement du Menu ------------------- */
 
@@ -254,4 +271,18 @@ img {
 
 .card-body img {
 	display: initial;
+}
+
+/* --------------------------------- Sign In / Sign Up -------------------------------- */
+
+.blank {
+	color: white;
+	font-family: bkant;
+	font-size: 1.2em;
+}
+
+.red {
+	color: red;
+	font-family: bkant;
+	font-size: 1.1em;
 }
