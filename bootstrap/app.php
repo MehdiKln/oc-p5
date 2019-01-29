@@ -28,6 +28,10 @@ $capsule = new \Illuminate\Database\Capsule\Manager;
 $capsule->addConnection($container['settings']['db']);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
+
+$container['debug'] = function() {
+    return true;
+};
     
 $container['db'] = function ($container) use ($capsule) {
     return $capsule;
@@ -59,14 +63,25 @@ $container['view'] = function ($container) {
     $view->getEnvironment()->addGlobal('flash', $container->flash);
 
     return $view;
+
+};
+
+$container['mailer'] = function ($container) {
+
+    $transport = (new \Swift_SmtpTransport('smtp.mailtrap.io', 465))
+    ->setUsername('0df6783fe265b2')
+    ->setPassword('f2799abfc402a0');
+    
+    $mailer = new \Swift_Mailer($transport);
+    return $mailer;
 };
 
 $container['validator'] = function ($container) {
     return new App\Validation\Validator;
 };
 
-$container['HomeController'] = function ($container) {
-    return new \App\Controllers\HomeController($container);
+$container['PagesController'] = function ($container) {
+    return new \App\Controllers\PagesController($container);
 };
 
 $container['AuthController'] = function ($container) {

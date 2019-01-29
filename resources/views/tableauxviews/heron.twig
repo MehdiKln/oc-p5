@@ -1,0 +1,28 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 160€ {% endblock %}
+{% block taille %} 75x112,5cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond2.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/heronzoom.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/heron.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/heronneige.jpg" data-src="{{ base_url() }}/ressources/img/heronneige.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/heron.jpg" data-src="{{ base_url() }}/ressources/img/heron.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

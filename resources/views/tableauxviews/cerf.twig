@@ -1,0 +1,23 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 520€ {% endblock %}
+{% block taille %} 180x160cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond3.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfzoom.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/cerf.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerf.jpg" data-src="{{ base_url() }}/ressources/img/cerf.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

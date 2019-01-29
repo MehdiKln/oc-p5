@@ -1,0 +1,28 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 90€ {% endblock %}
+{% block taille %} 69x64,5cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond16.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfmini.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/cerfmini.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfmini2.jpg" data-src="{{ base_url() }}/ressources/img/cerfmini2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfmini5.jpg" data-src="{{ base_url() }}/ressources/img/cerfmini5.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

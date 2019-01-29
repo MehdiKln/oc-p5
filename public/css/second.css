@@ -1,0 +1,229 @@
+/* ----------------- Général ------------------- */
+
+p {
+	color: white;
+	font-family: 'inkfree';
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+
+
+/* -------------- Fond d'écran vidéo --------------------- */
+
+#background_container {
+	position: fixed; right:0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: 100%; height: 100%; 
+	display: block;
+	z-index: -100;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#background_container img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ---------------------- Fonts -------------------------------------*/
+
+@font-face {
+	font-family: 'inkfree';
+	src: url('fonts/inkfree.ttf'); 
+}
+
+@font-face {
+	font-family: "tomatoes";
+	src: url("fonts/tomatoes.ttf");
+}
+
+@font-face {
+	font-family: "telegrafico";
+	src: url('fonts/telegrafico.ttf');
+}
+
+@font-face {
+	font-family: "expressway";
+	src: url('fonts/expressway.ttf');
+}
+
+
+
+/* ---------------- Header -------------------- */
+
+#clk {
+	font-family: "tomatoes";
+	font-size: 2em;
+	color: white;
+}
+
+#np {
+	font-family: "telegrafico";
+	font-size: 1.5em;
+	color: white;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+/* ----------- Menu positionnement du Menu ------------------- */
+
+#nav_container {
+	margin-top: 70px;
+}
+
+#nav {
+	padding: 0; margin: 0;
+	text-align: center;
+}
+
+#nav li {
+	display: inline;
+	list-style: none;
+}
+
+#nav a {
+	display: inline-block;
+	margin: 0 30px;
+	color: white;
+	font-family: 'inkfree';
+	font-size: 2em;
+}
+
+#actif {
+	text-decoration: underline;
+}
+
+#ac {
+		margin-top: -20px;
+		font-size: 1.3em;
+	}
+/* ------------------------------- Galerie ----------------------------- */
+
+#informations {
+	background-color: rgba(178, 144, 114, 0.8) !important;
+	font-size: 1.5em;
+	color: white;
+	font-family: inkfree;
+	padding: 5px;
+}
+
+#backgallery {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 50px;
+	margin-left: 30px;
+	font-size: 1.9em
+}
+
+.backgallery a {
+	color: white;
+	background-color :rgba(178, 144, 114, 0.9);
+	padding: 7px;
+	font-size: 1.5em;
+}
+
+#hover:hover {
+	text-decoration: underline;
+}
+
+i {
+	margin-right: 10px;
+}
+
+.prix {
+    margin-top: -200px;
+}
+
+/* ---------------- Media Querries ---------------------*/
+
+@media (max-width: 1367px) {
+
+	#background_container {
+	position: fixed; right:0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: 100%; height: 100%; 
+	display: block;
+	z-index: -100;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+	#background_container img {
+		width: 100%;
+		height: 100%;
+	}
+
+@media (max-width: 800px) {
+
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#background_container {
+	position: fixed; right:0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: 100%; height: 100%; 
+	display: block;
+	z-index: -100;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+	#background_container img {
+		width: auto;
+		height: auto;
+	}
+
+	#backgallery {
+		position: relative;
+	}
+
+	
+
+	#informations {
+		position: relative;
+		width: auto;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+	}
+
+	#gallery {
+		width: 100%;
+	}
+
+}
+
+@media (min-height: 1250px) {
+
+	#gallery {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 250px;
+}
+
+}
+
+@media (max-width: 991px) {
+
+	.prix {
+		margin-top: 0px;
+	}
+
+}

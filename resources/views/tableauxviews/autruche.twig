@@ -1,0 +1,23 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 160€ {% endblock %}
+{% block taille %} 75x112,5cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond6.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/autruchezoom.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/autruche.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/autruche.jpg" data-src="{{ base_url() }}/ressources/img/autruche.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

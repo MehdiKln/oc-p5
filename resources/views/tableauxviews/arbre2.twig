@@ -1,0 +1,33 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 130€ {% endblock %}
+{% block taille %} 89x70cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond7.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/arbreminizoom.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/arbre2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+              <div data-thumb="{{ base_url() }}/ressources/img/thumbs/arbremini2.jpg" data-src="{{ base_url() }}/ressources/img/arbremini2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/arbremini3.jpg" data-src="{{ base_url() }}/ressources/img/arbremini3.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/arbremini4.jpg" data-src="{{ base_url() }}/ressources/img/arbremini4.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

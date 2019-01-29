@@ -1,0 +1,28 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} Vendu {% endblock %}
+{% block taille %} - {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond7.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/birdzoom.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/bird.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/bird2.jpg" data-src="{{ base_url() }}/ressources/img/bird2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/bird3.jpg" data-src="{{ base_url() }}/ressources/img/bird3.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

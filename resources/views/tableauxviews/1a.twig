@@ -1,0 +1,23 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 70€ {% endblock %}
+{% block taille %} 53x60cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/1a.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+             <div data-thumb="{{ base_url() }}/ressources/img/thumbs/1.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/1a.jpg" data-src="{{ base_url() }}/ressources/img/1a.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

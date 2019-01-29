@@ -1,0 +1,23 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} Vendu {% endblock %}
+{% block taille %} 34x39cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond12.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/feuilles.jpg" data-src="{{ base_url() }}/ressources/img/feuilles.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/feuilles2.jpg" data-src="{{ base_url() }}/ressources/img/feuille2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

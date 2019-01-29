@@ -1,0 +1,28 @@
+{% extends "templates/pictemp.twig" %}
+
+{% block prix %} 190€ {% endblock %}
+{% block taille %} 85x94cm {% endblock %}
+
+{% block srcaltbackground %} src="{{ base_url() }}/ressources/img/background/fond16.jpg" alt="photo du ciel" {% endblock %}
+
+{% block diapo %}
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfheadgrand.jpg" data-src="{{ base_url() }}/ressources/img/imgzoom/cerfheadgrand.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfheadgrand4.jpg" data-src="{{ base_url() }}/ressources/img/cerfheadgrand4.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+            <div data-thumb="{{ base_url() }}/ressources/img/thumbs/cerfheadgrand5.jpg" data-src="{{ base_url() }}/ressources/img/cerfheadgrand5.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <!-- text ............. -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126201647-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126201647-1');
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CLK - Nature & Palette </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ base_url() }}/css/second.css">
+    <link href="{{ base_url() }}/css/camera.css" rel="stylesheet">
+    <script src="{{ base_url() }}/js/jquery.min.js"></script>
+    <script src="{{ base_url() }}/js/camera.min.js"></script>
+    <script type='text/javascript' src='{{ base_url() }}/js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='{{ base_url() }}/js/jquery.easing.1.3.js'></script> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ base_url() }}/css/bootstrap.min.css">
+    
+
+    <script>
+        jQuery(function(){
+            
+            jQuery('#camera_wrap_1').camera({
+                thumbnails: true
+            });
+
+            jQuery('#camera_wrap_2').camera({
+                height: '400px',
+                loader: 'bar',
+                pagination: false,
+                thumbnails: true
+            });
+        });
+    </script>
+ 
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-12 col-lg mb-5">
+      <p id="hover" class="backgallery"> <a href="gallery"> <i class="fas fa-arrow-left"></i> Galerie </a></p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-7 text-center"><h1> <span id="clk">CLK</span> <span id="np">NATURE ET PALETTE</span> </h1></div>
+      <div class="col-sm-12 col-md col-lg  text-right">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-6">
+      </div>
+      <div class="col-6">
+        <p id="ac"> Création de Tableaux </p>
+        </div>
+      </div>
+
+
+        <div id="background_container">
+             <img {% block srcaltbackground %}{% endblock %}>
+        </div> 
+<!-- 
+        <div id="nav_container">
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="atelier.html">Atelier</a></li>
+                    <li><a href="faq.html">F.A.Q</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> -->
+    <div class="row mt-5">
+        <div class="col-lg">
+        </div>
+        <div class="col-lg-8 col-md-12">
+        {% block diapo %}{% endblock %}
+        </div>
+        <div class="col-lg">
+        </div>
+    </div>
+        <div class="row prix text-center">
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-2">
+            <span id="informations">
+                
+                Prix : {% block prix %}{% endblock %} </br><br>
+                Taille : {% block taille %}{% endblock %}
+                
+            </span>   
+            </div>
+        </div>
+        
+</div>  
+</body>
+    <footer>
+    </footer>
+
+</body>
+</html>
+
+
+
+

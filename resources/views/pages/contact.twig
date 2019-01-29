@@ -8,9 +8,9 @@
     <div class ="row mt-5" id="contact_background">
         <div class="col-lg-1">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-3">
             <div id="formbg">
-                <form method="post" action="{{ path_for('submit-form') }}">
+                <form method="post" action="{{ path_for('contact') }}">
                     <p> <label for="title" id="formtitle"> Formulaire de contact : </label> </br> </br>
                         <input type="text" name="title" id="title" placeholder="Titre de votre message" size="30" maxlength="25" required/> </br></br>
                         <input type="text" name="nom" id="nom" placeholder="Nom Prénom" size="30" maxlength="20" required/> </br></br>

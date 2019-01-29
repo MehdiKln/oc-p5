@@ -17,4 +17,13 @@ class Controller
             return $this->container->{$property};
         }
     }
+
+    public function redirect($response, $name) {
+        
+        return $response->withStatus(302)->withHeader('Location', $this->router->pathFor($name));
+    }
+
+    public function mailer(): \Swift_Mailer {
+        return $this->container->mailer;
+    }
 }
